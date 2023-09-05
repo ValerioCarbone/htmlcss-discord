@@ -35,32 +35,22 @@ body{
 .navbar{
     background-color: #255EE9;
     min-height: 100px;
+    font-size: 18px;
+    letter-spacing: -1px;
     
 }
 
 
-.maincontent-header{
-    
+.hero{
     min-height: 600px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
 }
 
-.maincontent-header.debug{
-    background-color: #00008B;
-    border-bottom:4px solid #ADD8E6
-}
 
-.row-navbar{
-    display: flex;
-    font-size: 18px;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: -1px;
-    
-}
 
-.row-navbar > .col:nth-child(odd) {
+
+.navbar > .row > .col:nth-child(odd) {
     max-width: 200px;
 }
 
@@ -84,6 +74,10 @@ body{
     padding: 20px 0;
 }
 
+main .container{
+    padding: 100px 50px;
+}
+
 .link{
     color: #F1F4FC;
     
@@ -104,23 +98,27 @@ body{
     background-color: black;
 }
 
-.row-maincontent{
-    display: flex;
+.hero-card{
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     color: white;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 60px 0;
+
 }
 
-.maincontent-title{
+.row{
+    
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title{
     font-size: 30px;
     padding: 30px 0;
 }
 
-.maincontent-body{
+.hero-body{
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -143,52 +141,48 @@ body{
     margin-left: 10px;
 }
 
-.maincontent-header > .container{
+.hero > .container{
     max-width: 800px;
     
 }
 
 
 .col-2{
-    flex-basis: calc(100% / 4);
-}
-
-.col-8{
-    flex-basis: calc(100% / 2);
-   
+    flex-basis: (calc(100% / 12) * 2);
 }
 
 
-.row-mainc-header.debug{
-    background-color: #EE82EE;
-}
+
 
 
 
 /* MAIN-SECTION */
 
-.main-section-bgwhite{
-    min-height: 600px;
+.main-bg-white{
+    background-color: white;
     padding: 100px 0;
     
 }
 
-.row-main{
-    min-height: 500px;
-    max-width: 1300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.chat-body{
+
+.card-main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
 }
+/* .chat{
+    text-align: left;
+}
 
+.friendlist{
+    text-align: right;
+} */
+
+.flex-end{
+    justify-content: flex-end;
+}
 .card-title{
 
 font-size: 60px;
@@ -197,15 +191,19 @@ font-size: 60px;
 .card-body{
 font-size: 20px;
 }
-.col-5{
 
-    flex-basis: calc((100% / 12) * 5);
+/* .justify-end{
+    justify-content: flex-end;
+} */
+.col-4{
+
+    flex-basis: calc((100% / 12) * 4);
 
 }
 
-.col-7{
+.col-8{
     
-    flex-basis: calc((100% / 12) * 7 );
+    flex-basis: calc((100% / 12) * 8 );
 }
 
 .col-5.debug{
@@ -216,31 +214,12 @@ font-size: 20px;
     background-color: #FFC0CB;
 }
 
-.main-section-bggrey{
-    min-height: 600px;
-    background-color: #D3D3D3;
+.col-6{
+    flex-basis: ((100% / 12) * 6);
 }
 
-.big-main-section-bggrey{
-    min-height: 900px;
-    background-color: #D3D3D3;
-}
-
-.big-row-main{
-    min-height: 800px;
-    display: flex;
-}
-
-.big-row-main > .col-12 {
-    background-color: #228B22;
-    flex-basis: 100%;
-}
-
-.main-section-bgblack{
-
-min-height: 550px;
-
-
+.main-bg-grey{
+    background-color: #F6F6F6;
 }
 
 .main-section-bgblack.debugwhite{
@@ -248,39 +227,8 @@ min-height: 550px;
     border-bottom: 2px solid white;
 }
 
-.row-main > .col-2 {
-    background-color: #20B2AA;
-}
 
 .col-3{
-    flex-basis: calc(100% / 3);
-    background-color: #F08080;
+    flex-basis: calc((100% / 12) * 3);
 }
 
-.footer-section{
-    background-color: #23272a; 
-    min-height: 100px;
-    border-bottom: 1px solid white;
-}
-
-
-
-.row-footer{
-    min-width: 1200px;
-    min-height: 80px;
-    background-color: #7FFFD4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.col-footer{
-    min-height: 36px;
-    max-width: 44px;
-    font-size: 22px;
-}
-
-.col-footer.debug{
-    background-color: #FFB6C1;
-    padding: 2px 8px;
-}
