@@ -116,6 +116,7 @@ main .container{
 
 
 .hero > .container{
+    
     max-width: 800px;
     
 }
@@ -124,16 +125,19 @@ main .container{
 
 
 .main-bg-white{
+    
     background-color: white;
     padding: 100px 0;
     
 }
 
 .main-bg-grey{
+    
     background-color: #F6F6F6;
 }
 
 .card-main{
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -146,10 +150,12 @@ font-size: 44px;
 }
 
 .card-body{
-font-size: 20px;
+    
+    font-size: 20px;
 }
 
-.text-centere{
+.text-centered{
+    
     text-align: center;
 }
 
@@ -158,11 +164,11 @@ font-size: 20px;
 /* COLUMN */
 
 .col-2{
-    flex-basis: (calc(100% / 12) * 2);
+    flex-basis: calc((100% / 12) * 2);
 }
 
 .col-3{
-    flex-basis: ((100% / 12) * 3);
+    flex-basis: calc((100% / 12) * 3);
 }
 
 
@@ -173,7 +179,7 @@ font-size: 20px;
 }
 
 .col-6{
-    flex-basis: ((100% / 12) * 6);
+    flex-basis: calc((100% / 12) * 6);
 }
 
 .col-8{
