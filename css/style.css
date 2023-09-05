@@ -90,12 +90,18 @@ body{
 }
 
 
-.login{
-    background-color: #FFFFFF;
-    color: black;
+.button{
     padding: 8px 14px;
-    border-radius: 16px;
+    border-radius: 26px;
 }
+.button-white{
+
+}
+.button-black{
+    
+}
+
+
 
 
 .col-2{
